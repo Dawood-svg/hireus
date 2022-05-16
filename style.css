@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section.home {
+    width: 1336px;
+    height: 780px;
+}
+
+.bg {
+    width: 1750px;
+    height: 679px;
+    background: url(/images/bg.png);
+    background-size: cover;
+}
+
+.circle1 {
+    background: rgba(236, 236, 236, 0.15);
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    left: 1550px;
+    top: -50px;
+    clip-path: circle(50%);
+    clip-path: circle(30%);
+}
+
+.circle2 {
+    background: rgba(236, 236, 236, 0.15);
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    left: 400px;
+    top: 50px;
+    clip-path: circle(50%);
+}
+
+.circle3 {
+    background: rgba(236, 236, 236, 0.15);
+    position: absolute;
+    height: 146px;
+    width: 146px;
+    left: 1000px;
+    top: 385px;
+    clip-path: circle(50%);
+}
+
+.car1 img {
+    position: absolute;
+    width: 760px;
+    height: 560px;
+    top: 320px;
+    left: 500px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+}
+
+header .logo {
+    position: relative;
+    font-family: 'Mina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: #FF1D2D;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+}
+
+header ul li {
+    position: relative;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 53px;
+    font-weight: 700;
+    font-family: 'Mina';
+    text-decoration: none;
+    color: #fff;
+    font-style: normal;
+    font-size: 24px;
+    transition: 0.6s;
+}
+
+header ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    bottom: -.5px;
+    background-color: #fff;
+    transition: .2s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header ul li a:hover::after {
+    width: 80%;
+    transition: 0.3s;
+}
+
+header ul li a.active::after {
+    width: 80%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+header.sticky ul li a {
+    color: #000;
+
+}
+
+header.sticky a::after {
+    background-color: #000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.heading {
+    margin-left: 140px;
+}
+
+.heading h1 {
+    font-weight: 700;
+    font-size: 64px;
+    color: #fff;
+    font-family: 'Mina';
+    margin-top: -450px;
+}
+
+.heading p {
+    position: absolute;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Mina';
+    display: flex;
+    align-items: flex-end;
+    text-align: justify;
+    line-height: 32px;
+    width: 616px;
+    height: 128px;
+}
+
+.heading a {
+    position: absolute;
+    text-decoration: none;
+    font-size: 32px;
+    font-family: 'Mina';
+    font-weight: bold;
+    color: #333;
+    padding: 1px 50px;
+    top: 480px;
+    background-color: #EAE9E9;
+    border-radius: 30px;
+}
+
+.heading a:hover {
+    color: #FF1D2D;
+}
+
+.location img {
+    position: absolute;
+    width: 84px;
+    height: 104px;
+    top: 250px;
+    left: 1300px;
+}
+
+.location p {
+    position: absolute;
+    font-size: 24px;
+    font-family: 'Mina';
+    color: #fff;
+    top: 350px;
+    left: 1270px;
+}
+
+.location p::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    left: 0px;
+    bottom: -2px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bg2 {
+    width: 1750px;
+    height: 780px;
+}
+
+.heading p::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 4px;
+    bottom: 0%;
+    right: 90%;
+    transform: rotate(-90deg);
+    background-color: #fff;
+    margin-bottom: 105px;
+}
+
+.circles{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    clip-path: circle(50%);
+    background-color: #fff;
+    margin-top: 250px;
+    margin-left: 91px;
+}
+
+.circles2{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    clip-path: circle(50%);
+    background-color: #fff;
+    margin-top: 350px;
+    margin-left: 91px;
+}
+
+.circles3{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    clip-path: circle(50%);
+    background-color: #fff;
+    margin-top: 450px;
+    margin-left: 91px;
+}
